@@ -1,4 +1,3 @@
-/* Reset default spacing */
 * {
   margin: 0;
   padding: 0;
@@ -88,3 +87,4 @@ footer {
 #theme-toggle:checked ~ .container footer {
   background-color: #222;
 }
+
