@@ -3,12 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, sans-serif;
 }
-
-/* Grid Layout for Dashboard */
 .container {
   display: grid;
   grid-template-areas:
@@ -19,8 +16,6 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-
-/* Layout Area Styles */
 header {
   grid-area: header;
   background-color: #4CAF50;
@@ -30,20 +25,17 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .sidebar {
   grid-area: sidebar;
   background-color: #f0f0f0;
   padding: 1em;
 }
-
 .content {
   grid-area: content;
   padding: 2em;
   background-color: white;
   color: black;
 }
-
 footer {
   grid-area: footer;
   background-color: #4CAF50;
@@ -51,40 +43,29 @@ footer {
   text-align: center;
   padding: 1em;
 }
-
-/* Sidebar Link Styles */
 .sidebar ul {
   list-style: none;
 }
-
 .sidebar a {
   text-decoration: none;
   color: purple;
   display: block;
   margin: 10px 0;
 }
-
-/* Hide the checkbox input */
 #theme-toggle {
   display: none;
 }
-
-/* DARK MODE STYLES */
 #theme-toggle:checked ~ .container header {
   background-color: #222;
   color: white;
 }
-
 #theme-toggle:checked ~ .container .sidebar {
   background-color: #333;
 }
-
 #theme-toggle:checked ~ .container .content {
   background-color: #121212;
   color: white;
 }
-
 #theme-toggle:checked ~ .container footer {
   background-color: #222;
 }
-
